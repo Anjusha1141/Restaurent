@@ -1,0 +1,99 @@
+/* Custom spacing and hover effects for cards */
+.custom-card-group .card {
+    margin:5%;
+    padding: 1%; /* Adds spacing between cards */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .custom-card-group .card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    z-index: 10; /* Ensure the hovered card is above others */
+  }
+  
+  /* Optional: Add a box-shadow for better visual feedback on hover */
+  .custom-card-group .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  :root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+.text-primary{
+    color: var(--primary) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    font-size: 15px;
+    color: var(--light) !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: none;
+    transition: .5s;
+}
+.navbar-dark {
+    position: fixed;
+    background: var(--dark) !important;
+}
+
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+    border-radius: 0%;
+    border: none;
+    
+}
+.btn.btn-primary {
+    color: #FFFFFF;
+    background-color: var(--primary);
+    
+}
+.btn:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); 
+    z-index: 10; 
+
+}
+.carousel-inner{
+    position: relative;
+}
+.carousel-caption .caption-content {
+    position: absolute;
+    
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: left;
+    color: #fff; /* Caption text color */
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10%;
+    /* Caption background color */  
+}
+.caption-content{
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    margin-top: 50%;
+
+}
+
+.carousel-caption h5 {
+    font-size: 4vw;
+   /* Adjust font size as needed */
+}
+
+.carousel-caption p {
+    font-size: 1vw; /* Adjust font size as needed */
+}
+
+
